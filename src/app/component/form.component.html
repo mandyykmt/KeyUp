@@ -1,0 +1,27 @@
+<form [formGroup]="form">
+    <table>
+        <thead>
+            <h1>Form</h1>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input type="text" formControlName="name">
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="text" formControlName="email">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <code>{{ form$ | async | json }}</code>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
